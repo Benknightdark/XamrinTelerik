@@ -1,19 +1,14 @@
 {
-  "posts": [
+  "venders": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "Id": 1,
+      "VenCode": "abc",
+      "VenName": "json-server",
+      "VenOwner": "typicode",
+      "Tel": "12345678",
+      "Phone": "1111",
+      "Address": "no home",
+      "email": "fuck@fuck.com"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
