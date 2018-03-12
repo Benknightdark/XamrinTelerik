@@ -84,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\xamarinui\xamarinui.csproj">
-      <Project>{538183FB-C018-4B8B-965B-218FC41A1F61}</Project>
+      <Project>{263C2CA7-7F6F-48C8-864F-C75DD04887E1}</Project>
       <Name>xamarinui</Name>
     </ProjectReference>
   </ItemGroup>
