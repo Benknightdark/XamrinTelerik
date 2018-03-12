@@ -13,5 +13,10 @@ namespace xamarinui
 		{
 			InitializeComponent();
 		}
-	}
+        private void button_Clicked(object sender, System.EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("shit");
+            //implement your logic here.
+        }
+    }
 }
