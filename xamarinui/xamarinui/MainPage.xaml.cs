@@ -13,7 +13,7 @@ namespace xamarinui
 		public MainPage()
 		{
 			InitializeComponent();
-            UserDialogs.Instance.ShowLoading("Loading", MaskType.Black);
+           // UserDialogs.Instance.ShowLoading("Loading", MaskType.Black);
 		}
         private void button_Clicked(object sender, System.EventArgs e)
         {
