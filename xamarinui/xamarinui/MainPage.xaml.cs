@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Acr.UserDialogs;
+using Telerik.XamarinForms.Input.MaskedInput;
 using Xamarin.Forms;
 
 namespace xamarinui
@@ -13,8 +14,10 @@ namespace xamarinui
 		public MainPage()
 		{
 			InitializeComponent();
-           // UserDialogs.Instance.ShowLoading("Loading", MaskType.Black);
-		}
+            // UserDialogs.Instance.ShowLoading("Loading", MaskType.Black);
+            
+
+        }
         private void button_Clicked(object sender, System.EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("shit");

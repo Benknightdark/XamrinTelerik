@@ -3,18 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:xamarinui"
              xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+xmlns:extensions="clr-namespace:Telerik.XamarinForms.Input.MaskedInput;assembly=Telerik.XamarinForms.Input"
              x:Class="xamarinui.MainPage">
+
     <StackLayout>
-        <Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
+
+        <Label Text="Welcome to Xamarin.Forms!"
+           VerticalOptions="Center"
            HorizontalOptions="Center" />
-        <telerikInput:RadButton x:Name="button" 
-                        Text="Click me!"  
-                        BorderThickness="2" 
-                        BorderColor="#4488F6" 
-                        Clicked="button_Clicked"/>
+        <telerikInput:RadEntry WatermarkText="First Name" WatermarkTextColor="#6EA3FF"  IsPassword="True" />
+        <telerikInput:RadEntry WatermarkText="aaa Name" WatermarkTextColor="#6EA3FF" />
+        <telerikInput:RadMaskedInput x:Name="maskedInput"
+
+                             WatermarkText="MobilePhone"
+                              RejectedSymbolErrorText="Rejected Symbol"
+                             InvalidInputErrorText="Invalid Input"
+                             ErrorColor="Red"
+                             ErrorFontSize="22"
+                             Mask="(0000)-(000)-(000)"
+                             MaskType="Text" />
+        <telerikInput:RadMaskedInput MaskType="Regex"
+                        InvalidInputErrorText="Invalid date format!"
+                        ErrorColor="Red"
+                        WatermarkText="Enter Date"
+                        Mask="^[0-9]{4}\/(30|31|[0-2]{0,1}[0-9]{1})\/(10|11|12|[0-9]{1})$" />
+        <telerikInput:RadMaskedInput MaskType="Regex"
+                        InvalidInputErrorText="Invalid E-Mail format!"
+                        ErrorColor="Red"
+                        WatermarkText="Enter E-mail"
+                        Mask="{x:Static extensions:MaskExtensions.Email}" />
+        <telerikInput:RadButton x:Name="button"
+                        Text="Click me!"
+                        BorderThickness="2"
+                        BorderColor="#4488F6"
+                        Clicked="button_Clicked" />
     </StackLayout>
-
-
-
 </ContentPage>
