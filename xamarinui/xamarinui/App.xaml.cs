@@ -13,7 +13,7 @@ namespace xamarinui
 		{
 			InitializeComponent();
 
-			MainPage = new xamarinui.MainPage();
+			MainPage = new xamarinui.MaskedInput();
 		}
 
 		protected override void OnStart ()
